@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	<script src='script.js'></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<link rel='stylesheet' href='style.css'/>
+	<script src='script.js'></script>
+</head>
+<body>
+<center id="splashpage">
+<img id="logo" width="175" src="http://www.designmantic.com/create_thumb?id=5919"><h1 class="font-effect-3d" style="color:darkred;margin-top:150;font-family:'orbitron',serif;font-size:50px">P A R A D     X  G a m e  S t u d i o s</h1><h1 class="font-effect-distressed">THE SPECTRAL KING</h1>
+</center>
+<svg class = "loader"width="300px" height="200px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet" style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);">
+  <path stroke="black" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+  <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+        d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+				</svg>
+				<p class="loader">LOADING...</p>
+<div id="main" style="width:800px; margin:0 auto;">
+<div id="dialog" style="background: #444444;"><h3>All things begin with a Name.  What is yours?</h3><input class="nameinput"><button onclick="rename($('.nameinput').val())">&rarr;</button></div>
+<ul id="nav">
+    <li><a href="#main">Home</a></li>
+    <li><a class="hsubs" href="#">Magic</a>
+        <ul class="subs">
+            <li><a href="#">Healing</a></li>
+            <li><a href="#">Destroying</a></li>
+            <li><a href="#">Conjuring</a></li>
+        </ul>
+    </li>
+    <li><a class="hsubs" href="#">Inventory</a>
+        <ul class="subs">
+            <li><a href="#">Weapons</a></li>
+            <li><a href="#">Armor</a></li>
+        </ul>
+    </li>
+</ul>
+<table>
+<tr>
+<td><h2 style="margin: 20px;"><u>Log</u></h2></td>
+<td><h2 style="margin: 20px;"><u>Environment</u></h2></td>
+<td><h2 style="margin: 20px;"><u>Quests</u></h2></td>
+</tr>
+<tr>
+
+</tr>
+</table>
+<p>{{ localStorage.charClass }}</p>
+</div>
+</body>
+</html>
